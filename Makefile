@@ -19,6 +19,7 @@ CFLAGS += -I$(MOSQUITTO_SRC)/lib/
 
 #LDFLAGS =-lmosquitto
 LDFLAGS += -L$(MOSQUITTO_SRC)/lib/
+LDFLAGS += -undefined dynamic_lookup
 
 all : auth_plugin_pyauth.so
 
